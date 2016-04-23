@@ -29,10 +29,3 @@ build/Release
 node_modules
 
 db.json
-.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/

@@ -1,6 +1,6 @@
-title: iOS[s01]
+title: iOS 多人共用证书-单一开发者模式
 date: 2012-10-06 20:07:44
-tags:
+tags:[iOS]
 ---
 ####几点纪录的
 

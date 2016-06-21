@@ -1,6 +1,7 @@
 title: property 参数详解
 date: 2013-11-06 11:07:44
-tags: Objective-C, Memory
+author: [mac.meng]
+tags: [Objective-C, Memory]
 ---
 # 关于@property特性的介绍
 

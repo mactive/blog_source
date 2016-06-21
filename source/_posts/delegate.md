@@ -1,5 +1,8 @@
-Title: delegate
-Date: 2012-11-11 01:08
+title: Delegate passvalue in iOS
+date: 2012-11-11 16:03:15
+author: [mac.meng]
+tags: [iOS,delegate]
+---
 
 #delegate 传值实例
 

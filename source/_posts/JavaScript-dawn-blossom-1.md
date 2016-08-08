@@ -1,7 +1,7 @@
 title: JavaScript 朝花夕拾 -- 1
 date: 2016-08-08 12:40:35
 author: [mac.meng]
-tags:[JavaScript,DawnBlossom,Series]
+tags: [JavaScript,DawnBlossom,Series]
 ---
 ## Apply Call Argument
 call 和 apply 都是为了改变某个函数运行时的 context 即上下文而存在的，换句话说，就是为了改变函数体内部 this 的指向。因为 JavaScript 的函数存在「定义时上下文」和「运行时上下文」以及「上下文是可以改变的」这样的概念。

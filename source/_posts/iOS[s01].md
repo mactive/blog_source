@@ -1,6 +1,6 @@
 title: iOS 多人共用证书-单一开发者模式
 date: 2012-10-06 20:07:44
-tags:[iOS]
+tags: [iOS]
 ---
 ####几点纪录的
 
@@ -30,3 +30,5 @@ tags:[iOS]
 5. openssl pkcs12 -in apns-dev-cert.p12 -out apns-dev-cert.pem -nodes -clcerts
 6. // 验证 pem
 7. openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert apns-dev-cert.pem -debug -showcerts -CAfile apns-dev-cert.pem
+
+

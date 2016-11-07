@@ -1,4 +1,4 @@
-# title: 近期学习和工作计划
+title: 近期学习和工作计划
 date: 2016-11-07 19:30:20
 author: [mac.meng]
 tags: [learn,life,thinking]

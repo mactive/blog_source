@@ -38,4 +38,3 @@ Deploy
     hexo deploy
 
 
-	have fun!

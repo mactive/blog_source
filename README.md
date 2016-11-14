@@ -36,3 +36,6 @@ Deploy
 
     hexo clean
     hexo deploy
+
+
+	have fun!

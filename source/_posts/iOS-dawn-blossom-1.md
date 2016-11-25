@@ -7,6 +7,8 @@ tags: [iOS,DawnBlossom,Series]
 
 > 断断续续做iOS开发也有5年时间了,中间不务正业的搞了2年JS.回过头来在看iOS的变化非常的快.虽然swift也在学习,面向protocol和struct编程嘛.但感觉Objective-C的很多知识点的深层次原理没有彻底搞懂. 收到业界一些大牛的启发和指导, 有人持续写刨根问底系列, 有人做架构对比分析, 微观的也好,宏观的也好. 本系列文章也想从自己的角度尝试理解一些问题, 将一些之前忽视的花朵重新拾起来品玩, 说不定有新的发现. 捎带写一些自己的感受, 希望让自己活得明白一些.
 
+<!-- more -->
+
 ## 发明Protocol的原因
 
 从 [Apple官方文档](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/WorkingwithProtocols/WorkingwithProtocols.html),[中文](http://wiki.jikexueyuan.com/project/programming-with-objective-c/working-with-protocols.html)可以得到的知识点.

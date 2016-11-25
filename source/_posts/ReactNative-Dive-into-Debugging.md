@@ -16,6 +16,9 @@ tags: [ReactNative,Debugging,Dive,翻译]
 
 但如果你和我一样,你一定不会相信编程中有魔法的存在,而要去探究他的工程实现.这篇文章就是带你理解React Native Debugging 背后的原理.
 
+<!-- more -->
+
+
 tl;dr 文章很长,不喜勿读
 
 三方清单

@@ -8,7 +8,7 @@ call 和 apply 都是为了改变某个函数运行时的 context 即上下文�
 
 二者的作用完全一样，只是接受参数的方式不太一样。例如，有一个函数 func1 定义如下：
 
-```
+```JavaScript
 var func1 = function(arg1, arg2) {};
 ```
 
@@ -16,7 +16,7 @@ var func1 = function(arg1, arg2) {};
 
 JavaScript 中，某个函数的参数数量是不固定的，因此要说适用条件的话，当你的参数是明确知道数量时，用 call，而不确定的时候，用 apply，然后把参数 push 进数组传递进去。当参数数量不确定时，函数内部也可以通过 arguments 这个数组来便利所有的参数。
 
-```
+```JavaScript
 function splat(fun){
 	return function(array){
 		return fun.apply(null,array); // null 没有上下文,等待参数传入
@@ -28,6 +28,27 @@ var addArrayElements = splat(function(x, y){ return x + y});
 addArrayElements([1,2]);
 // 3
 ```
+## bind - Function.prototype.bind()
+bind() 方法与 apply 和 call 很相似 是可以改变函数体内 this 的指向。
+react es6 撰写方式的代码经常需要 `.bind(this)`, 绑定作用域
+
+MDN的解释是：bind()方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入 bind()方法的第一个参数作为 this，传入 bind() 方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。
+
+```JavaScript
+var foo = {x:3};
+var bar = function(){
+    console.log(this.x);
+}
+ 
+bar(); // undefined
+var func = bar.bind(foo);
+func(); // 3
+```
+这里我们创建了一个新的函数func, 当使用bind绑定一个作用域之后.当func被执行的时候实际上是bar被执行.
+然后bar中的this 指向的是foo. 
+
+如果你不想新建func也行,写作 bar.bind(foo)(). 因为bind是function原型中的方法.所以必须是一个
+function类型的对象.bind(xx).当然他也返回一个function类型的对象
 
 ## Exception throw try catch
 ### Rules

@@ -1,4 +1,4 @@
-title: JavaScript 朝花夕拾 -- 2: Require.JS 定义和发现机制
+title: JavaScript 朝花夕拾 -- 2 Require.JS 定义和发现机制
 date: 2017-02-23 10:40:35
 author: [mac.meng]
 tags: [JavaScript,DawnBlossom,Series]

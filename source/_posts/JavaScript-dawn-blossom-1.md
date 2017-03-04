@@ -3,7 +3,7 @@ date: 2016-08-08 12:40:35
 author: [mac.meng]
 tags: [JavaScript,DawnBlossom,Series]
 ---
-## Apply Call Argument
+## Apply & Call Argument
 call 和 apply 都是为了改变某个函数运行时的 context 即上下文而存在的，换句话说，就是为了改变函数体内部 this 的指向。因为 JavaScript 的函数存在「定义时上下文」和「运行时上下文」以及「上下文是可以改变的」这样的概念。
 
 二者的作用完全一样，只是接受参数的方式不太一样。例如，有一个函数 func1 定义如下：
@@ -28,6 +28,9 @@ var addArrayElements = splat(function(x, y){ return x + y});
 addArrayElements([1,2]);
 // 3
 ```
+
+<!-- more -->
+
 ## bind - Function.prototype.bind()
 bind() 方法与 apply 和 call 很相似 是可以改变函数体内 this 的指向。
 react es6 撰写方式的代码经常需要 `.bind(this)`, 绑定作用域

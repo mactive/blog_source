@@ -44,6 +44,24 @@ $speDate: () => $(".spe_pmt_validateDate")
 ```
 <!-- more -->
 
+## $set
+1. 不允许直接往data根对象中$set不存在的属性, 可以$set 到 this.someObject
+2. 如果$set一个Object,Object中无论有几个层级, vue都会为每个对象建立 set和get方法
+3. 就算是对象是后$set的,对于子属性的watch方法也是可以呗触发的
+```
+// a 在data中初始化了, 必须是个Object对象, 如果a.b 也初始化了
+// $set会覆盖a.b 并深度遍历b中所有的子属性, 并为他们建立set和get方法
+mounted: function() {
+ this.$set(this.a, 'b', {
+   name: {
+     first: 'Meng',
+     last: 'Mac'
+    },
+    age: 121
+  });
+}
+```
+
 ## mixin 用来做什么
 和业务不强相关又不能独立变成组件的东西.
 写 mixin 的时候可以,拿到组件的data和prop,可以在完整的生命周期中做事情. 基本上可以理解extend 到 vue的options 中去. 不过有merge优先级选择 `Vue.config.optionMergeStrategies`

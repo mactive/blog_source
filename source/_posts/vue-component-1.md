@@ -2,7 +2,6 @@ title: Vue 组件开发心得(1)
 date: 2017-03-24 17:07:44
 author: [mac.meng]
 tags: [javascript,Vue]
-date: 2017-03-24 17:07:44
 ---
 
 **一句话经验**

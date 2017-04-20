@@ -6,7 +6,7 @@ tags: [javascript,NodeJS,C++]
 
 先来个简单的公式
 
-### NodeJS = Foundation + V8 Engine + JS API
+## NodeJS = Foundation + V8 Engine + JS API
 
 如果我们仔细看一下Node的源码,其中有23.8%的C++,5.6%的C,还有64.5%的JS.
 `Foundation`中包含几大核心, File(文件操作),Network(网络),Event(事件驱动),Stream(流的概念),Module(模块系统). 这几块无一不是C/C++实现的.JS的解释器V8Engine更是C/C++实现的,别忘了Chrome可能是世界上最大的C/C++项目了.
@@ -43,11 +43,11 @@ nw.js 是做这件事的先驱,不过现在不再继续维护,他两个可以说
 
 静态语言都离不开这些步骤.在Compile的时候可能会因为你自己写的语法而报错.在Link的时候经常会找不到相应的库而不能执行下去. Debug和run的区别无非就是加入Symbol,让编译器在报错的时候能告诉你错误出在了哪一行,他的上下文之类的,方便你debug.你最后Release的版本必然是不包含symbol的. 一般一个可执行的Binary文件都会配一个symbol文件. 类似xx.min.js + xx.min.js.map
 
-## tips
+## Tips
 
 * chrome 50之后不再支持winXP, 应该跟XP上的C++执行器有关系.因为微软可能已经不再维护以WindowNT5为版本的winXP了.
 * 如何你要做WinXP的客户端(比如我厂),那么你只能使用 nw.js <= 0.14.7的版本
-> file addon.node
+* $: file addon.node 可以再mac上查看文件的类型,二进制文件可以知道软件和硬件架构
 
 ## github
 
@@ -60,7 +60,7 @@ nw.js 是做这件事的先驱,不过现在不再继续维护,他两个可以说
 
 * [V8 文档](https://v8docs.nodesource.com/node-7.4/) 配合 [C/C++ Addon](https://nodejs.org/api/addons.html) 来看
 * [C++中文菜鸟教程](http://www.runoob.com/cplusplus/cpp-tutorial.html)
-* www.learncpp.com(http://www.learncpp.com/)
+* [www.learncpp.com](http://www.learncpp.com/)
 
 
 
